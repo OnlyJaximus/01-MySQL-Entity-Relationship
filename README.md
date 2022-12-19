@@ -1,5 +1,7 @@
 # 01-MySQL-Entity-Relationsip
 
+https://app.diagrams.net/
+
 ENTITET: 
 1- student 
 2- profesor
