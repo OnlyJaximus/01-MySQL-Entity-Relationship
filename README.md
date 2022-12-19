@@ -2,12 +2,12 @@
 
 https://app.diagrams.net/
 
-ENTITET: 
+ENTITET: <br />
 
-1- student 
-2- profesor
-3- predmet
-4- katedra
+1- student  <br/>
+2- profesor <br/>
+3- predmet <br/>
+4- katedra <br/>
 
 -----------------------------------------------------------------------------------------------------------------
 
