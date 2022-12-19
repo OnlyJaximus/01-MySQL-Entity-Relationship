@@ -56,5 +56,6 @@ asocijativni entitet => u kojem definisemo ocenu i datum polaganja <br/>
            
 
 ![1](https://user-images.githubusercontent.com/56784702/208450361-8723eeb6-e7ac-48bd-80ea-43ee18ab23f9.png)
+![2](https://user-images.githubusercontent.com/56784702/208481379-cf5af19a-4cba-47e4-98e5-51db94998dec.png)
 
 
