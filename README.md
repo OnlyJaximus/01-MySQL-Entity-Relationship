@@ -1,4 +1,4 @@
-# 01-MySQL-Entity-Relationsip
+# 01-MySQL-Entity-Relationship
 
 https://app.diagrams.net/
 
