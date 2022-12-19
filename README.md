@@ -3,6 +3,7 @@
 https://app.diagrams.net/
 
 ENTITET: 
+
 1- student 
 2- profesor
 3- predmet
@@ -11,6 +12,7 @@ ENTITET:
 -----------------------------------------------------------------------------------------------------------------
 
 GLAGOL: 
+
 1- odnos izmedju studdenta i predmeta je SLUSA
 2- odnos izmedju profesora i predmeta je PREDAJE
 3- katedra PRIPADA preddmetu
@@ -20,6 +22,7 @@ GLAGOL:
 
 KARDINALITET:
 1- student slusa 1 ili vise predmeta  min 1 a max je n (1, n)
+
 2- predmet slusa jedan ili vise studenata (1, n)
 
 3- nastavnik ne mora da predaje ni jedan predmet a moze da predaje i vise predmeta (0, n)
