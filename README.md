@@ -1,6 +1,6 @@
 # 01-MySQL-Entity-Relationship
 
-https://app.diagrams.net/
+https://app.diagrams.net/    ctrl+u = underscore (primary key)
 
 ENTITET: <br />
 
@@ -36,20 +36,20 @@ KARDINALITET: <br/>
 -----------------------------------------------------------------------------------------------------------------
 
 ATRIBUTI: <br/>
-student => 1- broj_index (public_key) br/>
+student => 1- broj_index (primary key) br/>
            2- godina_studija <br/>
            3-ime prezime <br/>
            
-nastavnik => 1- sifra (public_key) <br/>
+nastavnik => 1- sifra (primary key) <br/>
              2- ime_prezime <br/>
              3- zvanje <br/>
              4- plata <br/>
              
-predmet   => 1- sifra (public_key)   <br/>         
+predmet   => 1- sifra (primary key)   <br/>         
              2- naziv <br/>
              3-broj_casova <br/>
              
-katedra   => 1- sifra (public_key)     <br/>        
+katedra   => 1- sifra (primary key)     <br/>        
              2- naziv <br/>
 
 asocijativni entitet => u kojem definisemo ocenu i datum polaganja <br/>
