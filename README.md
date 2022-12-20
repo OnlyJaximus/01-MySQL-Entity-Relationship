@@ -5,6 +5,14 @@ https://app.diagrams.net/    ctrl+u = underscore (primary key)
 -----------------------------------------   Entity-Relationship  --------------------------------------------------------- <br/>
                                           DIJAGRAM ODNOSA ENTITETA 
 
+- Entity-Relationship ER model, u njemu se identifikuju atributi koji su primarni kljucevi tih tabela jer su jedinstveni.<br /><br />
+
+- Kada se kreira relacioni model, dobra praksa je da se kreira SUROGAT kljuc, odnosno ID koji je autogenerisan. <br />
+a) Korisnik toga nije svestan - korisnik ce i dalje koristiti ono sto smatra kljucem (npr. broj indexa za studenta ili maticni broj za osobu)<br />
+b) Autogenerisani kljuc olaksava modelovanje veza, ubrzava proces pisanja koda, olaksava izemene itd.<br />
+
+Entity-Relationship ER model:
+
 ENTITET: <br />
 
 1- student  <br/>
@@ -85,7 +93,51 @@ profesor (id, sifra, ime, prezime, zvanje, plata, katedra_id) <br/>
 profesor_predmet(id, profesor_id, predmet_id) <br/>
 
 ![1](https://user-images.githubusercontent.com/56784702/208450361-8723eeb6-e7ac-48bd-80ea-43ee18ab23f9.png)
-![git](https://user-images.githubusercontent.com/56784702/208663265-1bd35348-e8a3-4790-bc1c-d010ba42eea8.png)
-dasdasdsadasd dsadasd
+![git](https://user-images.githubusercontent.com/56784702/208663265-1bd35348-e8a3-4790-bc1c-d010ba42eea8.png) <br/>
+
+ ----------------------------------------------- RESENjE ZADATKA BROJ 2  ------------------------------------------------------------------ <br/>
+ 
+                                             *** Entity-Relationship ***  <br/>  <br/>
+                                             
+-Entity-Relationship ER model, u njemu se identifikuju atributi koji su primarni kljucevi tih tabela jer su jedinstveni.
+ 
+ENTITETI: student, predmet, profesor <br/>
+
+Atributi studenta: broj_indexa, ime, prezime, godina_upisa, godina_rodjenja <br/>
+Atributi predmeta: sifra, naziv, broj_kredita <br/>
+Atributi prfesora: jmbg, ime, prezime <br/>
+
+GLAGOL: 
+1- Student mora PRIJAVITI bar jedan predmet (PRIJAVLjUJE)  <br/>
+2- Za predmet se zna koji profesor ga predaje (PREDAJE)  <br/>
+
+KARDINALITET: 
+1- Student mora prijaviti makar jedan predmet (1, n)  -> student mora imati makar jedan predmet a moze imati i vise.  <br/>
+2- Predmet: Postoji samo jedan profesor na predmetu. Mogu postojati predmeti kojima jos nije dodeljen profesor  (0, 1)   <br/>
+3- Profesor moze predavati vise predmeta, mora makar jedan. (1, n)  <br/>
+
+Ako predmet nije niko prijavio, moze da ima 0 studenata ili moze da ima vise studenata.  <br/> <br/>
+
+                                             *** Relational Model ***   <br/> 
+- ENTITETI: student, predmet, profesor.  <br/>
+ 
+- ODNOS IZMEDJU STUDENTA I PREDMETA:  <br/> 
+  1-(gledamo njihove max kardinalitete) n:n. Kada imamo vezu vise na vise, kreira se medju tabela koja ce se zvati student_predmet   Tabela student_predmet ce imati svoj primarni kljuc id, takodje ce imati i 2 strana kljuca (foreign key) koji ce gadjati id tih tablea. Ta 2 strana kljuca su student_id i predmet_id <br/>
+ 
+ - ODNOS IZMEDJU PROFESORA I PREDMETA: <br/> 
+  1- Za predmet se zna koji ga profesor predaje. Ako znamo tu informaciju, onda znaci da cemo unutar tabele PREDMET, moramo nekako proslediti neki podatak od profesora      a to ce biti PROFESOR_ID da bi znacli koji profesor predaje koji predmet. </br>
+     - To je veza Predmet(0:1) gde jedan predmet mora da predaje makar jedan profesor i Profesor (0, n), jer profesor moze da ne predaje ni jedan predmet a moze i da predaje vise predmeta.
+     -Ovo je veza 1:N, sto znaci da cemo, da cemo na strani gde je 1, ubacujemo strani kljuc profesor_id, da bi nam pokazao koji profesor predaje koji predmet.
+- GLAGOLI:  <br/>
+         student SLUSA predmet  <br/>
+         profesor PREDAJE predmet  <br/>
+         
+* Za svaki entitet se kreira poseban id i ako se ne trazi. I on je primarni kljuc (PRIMARY KEY)  <br/>
+
+student (id, broj_indexa, ime, prezime, godina_upisa, godina_rodjenja) <br/>
+predmet (id, sifra, naziv, ects, profesor_id)  <br/>
+profesor (id, jmbg, ime, prezime)  <br/>
+student_predmet(id, student_id, predmet_id)  <br/>
+
 ![git novi](https://user-images.githubusercontent.com/56784702/208665329-7c1aeb1b-1d78-4c85-9e4f-8cb6943a98fb.png)
 
