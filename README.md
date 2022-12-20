@@ -140,7 +140,8 @@ profesor (id, jmbg, ime, prezime)  <br/>
 student_predmet(id, student_id, predmet_id)  <br/>
 
 ![git novi](https://user-images.githubusercontent.com/56784702/208665329-7c1aeb1b-1d78-4c85-9e4f-8cb6943a98fb.png)
-
 ![resenje 2 zadattka](https://user-images.githubusercontent.com/56784702/208686002-6ef1620c-d27b-451e-a01e-b2136e3a54d7.png)
+![git myadmin](https://user-images.githubusercontent.com/56784702/208689958-80766907-8799-455c-8ed7-b70d083a425d.png)
+
 
 
