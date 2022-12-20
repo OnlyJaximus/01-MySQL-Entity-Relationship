@@ -86,4 +86,5 @@ profesor_predmet(id, profesor_id, predmet_id) <br/>
 
 ![1](https://user-images.githubusercontent.com/56784702/208450361-8723eeb6-e7ac-48bd-80ea-43ee18ab23f9.png)
 ![git](https://user-images.githubusercontent.com/56784702/208663265-1bd35348-e8a3-4790-bc1c-d010ba42eea8.png)
+![git novi](https://user-images.githubusercontent.com/56784702/208665329-7c1aeb1b-1d78-4c85-9e4f-8cb6943a98fb.png)
 
