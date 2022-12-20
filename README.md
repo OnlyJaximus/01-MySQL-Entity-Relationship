@@ -119,12 +119,12 @@ KARDINALITET:
 Ako predmet nije niko prijavio, moze da ima 0 studenata ili moze da ima vise studenata.  <br/> <br/>
 
                                              *** Relational Model ***   <br/> 
-- ENTITETI: student, predmet, profesor.  <br/>
+- ENTITETI: student, predmet, profesor. 
  
 - ODNOS IZMEDJU STUDENTA I PREDMETA:  <br/> 
   1-(gledamo njihove max kardinalitete) n:n. Kada imamo vezu vise na vise, kreira se medju tabela koja ce se zvati student_predmet   Tabela student_predmet ce imati svoj primarni kljuc id, takodje ce imati i 2 strana kljuca (foreign key) koji ce gadjati id tih tablea. Ta 2 strana kljuca su student_id i predmet_id <br/>
  
- - ODNOS IZMEDJU PROFESORA I PREDMETA: <br/> 
+ - ODNOS IZMEDJU PROFESORA I PREDMETA: 
   1- Za predmet se zna koji ga profesor predaje. Ako znamo tu informaciju, onda znaci da cemo unutar tabele PREDMET, moramo nekako proslediti neki podatak od profesora      a to ce biti PROFESOR_ID da bi znacli koji profesor predaje koji predmet. </br>
      - To je veza Predmet(0:1) gde jedan predmet mora da predaje makar jedan profesor i Profesor (0, n), jer profesor moze da ne predaje ni jedan predmet a moze i da predaje vise predmeta.
      -Ovo je veza 1:N, sto znaci da cemo, da cemo na strani gde je 1, ubacujemo strani kljuc profesor_id, da bi nam pokazao koji profesor predaje koji predmet.
@@ -140,4 +140,7 @@ profesor (id, jmbg, ime, prezime)  <br/>
 student_predmet(id, student_id, predmet_id)  <br/>
 
 ![git novi](https://user-images.githubusercontent.com/56784702/208665329-7c1aeb1b-1d78-4c85-9e4f-8cb6943a98fb.png)
+
+![resenje 2 zadattka](https://user-images.githubusercontent.com/56784702/208686002-6ef1620c-d27b-451e-a01e-b2136e3a54d7.png)
+
 
