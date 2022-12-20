@@ -68,7 +68,7 @@ asocijativni entitet => u kojem definisemo ocenu i datum polaganja <br/>
 Kod relacionih modela, primarni kljuc je uvek ID. <br/>
       ODNOS STUDENT I PREDMET  
 * Odnos izmedju studenta i predmeta (gledamo max kardinalitet n:n), onda znaci da ide medju tabela izmedju njih. <br/>
-* Njihova veza ima 2 atributa veze a to su datum_polaganja i ocena i zato se kreira medju tablea student_predmet. <br/>
+* Njihova veza ima 2 atributa veze a to su datum_polaganja i ocena i zato se kreira medju tabela student_predmet. <br/>
 
        ODNOS PREDMET i KATEDRA  
 * Odnos izmedju predmet i katedre (gledamo max kardinalitet 1:n). Kada imamo 1 prema vise, u tabeli predmet se stavlja katedra_id jer katedra moze da ih ima vise. <br/>
