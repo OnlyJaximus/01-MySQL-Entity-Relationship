@@ -58,7 +58,7 @@ asocijativni entitet => u kojem definisemo ocenu i datum polaganja <br/>
            
 ----------------------------------------------- Relational Model  ------------------------------------------------------------------ <br/>
 Kod relacionih modela, primarni kljuc je uvek ID. <br/>
-      ODNOS STUDENT I PREDMET  <br/>
+      ODNOS STUDENT I PREDMET  
 * Odnos izmedju studenta i predmeta (gledamo max kardinalitet n:n), onda znaci da ide medju tabela izmedju njih. <br/>
 * Njihova veza ima 2 atributa veze a to su datum_polaganja i ocena i zato se kreira medju tablea student_predmet. <br/>
 
