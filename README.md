@@ -2,7 +2,7 @@
 
 https://app.diagrams.net/    ctrl+u = underscore (primary key)
 
------------------------------------------   Entity-Relationship  ---------------------------------------------------------
+-----------------------------------------   Entity-Relationship  --------------------------------------------------------- <br/>
                                           DIJAGRAM ODNOSA ENTITETA 
 
 ENTITET: <br />
@@ -58,7 +58,7 @@ asocijativni entitet => u kojem definisemo ocenu i datum polaganja <br/>
            
 ----------------------------------------------- Relational Model  ------------------------------------------------------------------ <br/>
 Kod relacionih modela, primarni kljuc je uvek ID. <br/>
-      ODNOS STUDENT i PREDMET <br/>
+      ODNOS STUDENT i PREDMET 
 * Odnos izmedju studenta i predmeta (gledamo max kardinalitet n:n), onda znaci da ide medju tabela izmedju njih. <br/>
 * Njihova veza ima 2 atributa veze a to su datum_polaganja i ocena i zato se kreira medju tablea student_predmet. <br/>
 
@@ -67,10 +67,10 @@ Kod relacionih modela, primarni kljuc je uvek ID. <br/>
 * U ovom slucaju 1:n gledamo onaj koji je 1, u ovom slucaju to je predmet, on ce imati strani kljuc onaj koji je n, u ovom slucaju katedra.<br/>
 * Zato se u tabeli predmet dodaje jos atribut katedra_id    <br/>
 
-     ODNOS PROFESOR i KATEDRA <br/>
+     ODNOS PROFESOR i KATEDRA 
 * Odnos izmedju profesor i katedre (gledamo max kardinalitet 1:n). To znaci, unutar profesor imacemo strani kljuc na katedru a to je katedra_id. <br/>
  
-    ODNOS PROFESOR i PREDMET <br/>
+    ODNOS PROFESOR i PREDMET 
 * Odnos izmedju profesor i predmet (gledamo max kardinalitet n:n) a to je odnos vise na vise. To znaci da ide medju tabela izmedju njih. <br/>
 * Tabela sa imenom profesor_predmet <br/>
 
