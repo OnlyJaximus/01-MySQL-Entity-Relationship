@@ -97,7 +97,7 @@ profesor_predmet(id, profesor_id, predmet_id) <br/>
 
  ----------------------------------------------- RESENjE ZADATKA BROJ 2  ------------------------------------------------------------------ <br/>
  
-                                             *** Entity-Relationship ***  <br/>  <br/>
+                                             *** Entity-Relationship ***  
                                              
 -Entity-Relationship ER model, u njemu se identifikuju atributi koji su primarni kljucevi tih tabela jer su jedinstveni.
  
@@ -116,9 +116,9 @@ KARDINALITET:
 2- Predmet: Postoji samo jedan profesor na predmetu. Mogu postojati predmeti kojima jos nije dodeljen profesor  (0, 1)   <br/>
 3- Profesor moze predavati vise predmeta, mora makar jedan. (1, n)  <br/>
 
-Ako predmet nije niko prijavio, moze da ima 0 studenata ili moze da ima vise studenata.  <br/> <br/>
+Ako predmet nije niko prijavio, moze da ima 0 studenata ili moze da ima vise studenata. (0, n) <br/> <br/>
 
-                                             *** Relational Model ***   <br/> 
+                                             *** Relational Model ***   
 - ENTITETI: student, predmet, profesor. 
  
 - ODNOS IZMEDJU STUDENTA I PREDMETA:  <br/> 
