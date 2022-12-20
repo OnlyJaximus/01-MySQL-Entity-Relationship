@@ -1,6 +1,9 @@
-# 01-MySQL-Entity-Relationship
+# 01-MySQL-Entity-Relationship & Relational model
 
 https://app.diagrams.net/    ctrl+u = underscore (primary key)
+
+-----------------------------------------   Entity-Relationship  ---------------------------------------------------------
+                                          DIJAGRAM ODNOSA ENTITETA 
 
 ENTITET: <br />
 
@@ -9,7 +12,7 @@ ENTITET: <br />
 3- predmet <br/>
 4- katedra <br/>
 
------------------------------------------------------------------------------------------------------------------
+
 
 GLAGOL: <br/>
 
@@ -18,8 +21,7 @@ GLAGOL: <br/>
 3- katedra PRIPADA preddmetu <br/>
 4- odnos izemdju profesora i katedre je RADI <br/>
 
------------------------------------------------------------------------------------------------------------------
- 
+
 KARDINALITET: <br/>
 1- student slusa 1 ili vise predmeta  min 1 a max je n (1, n) <br/>
 
@@ -33,7 +35,6 @@ KARDINALITET: <br/>
 
 7- nastavnik MOZE da radi samo na jednoj katedri (0, 1) <br/>
 
------------------------------------------------------------------------------------------------------------------
 
 ATRIBUTI: <br/>
 student => 1- broj_index (primary key) br/>
@@ -53,9 +54,36 @@ katedra   => 1- sifra (primary key)     <br/>
              2- naziv <br/>
 
 asocijativni entitet => u kojem definisemo ocenu i datum polaganja <br/>
+
            
+----------------------------------------------- Relational Model  ------------------------------------------------------------------ <br/>
+Kod relacionih modela, primarni kljuc je uvek ID.
+      ODNOS STUDENT i PREDMET
+* Odnos izmedju studenta i predmeta (gledamo max kardinalitet n:n), onda znaci da ide medju tabela izmedju njih.
+* Njihova veza ima 2 atributa veze a to su datum_polaganja i ocena i zato se kreira medju tablea student_predmet
+
+       ODNOS PREDMET i KATEDRA
+* Odnos izmedju predmet i katedre (gledamo max kardinalitet 1:n). Kada imamo 1 prema vise, u tabeli predmet se stavlja katedra_id jer katedra moze da ih ima vise.
+* U ovom slucaju 1:n gledamo onaj koji je 1, u ovom slucaju to je predmet, on ce imati strani kljuc onaj koji je n, u ovom slucaju katedra.
+* Zato se u tabeli predmet dodaje jos atribut katedra_id      
+
+     ODNOS PROFESOR i KATEDRA
+* Odnos izmedju profesor i katedre (gledamo max kardinalitet 1:n). To znaci, unutar profesor imacemo strani kljuc na katedru a to je katedra_id.
+ 
+    ODNOS PROFESOR i PREDMET
+* Odnos izmedju profesor i predmet (gledamo max kardinalitet n:n) a to je odnos vise na vise. To znaci da ide medju tabela izmedju njih.
+* Tabela sa imenom profesor_predmet
+
+ENTITETI: student, katedra, predmet, profesor
+ATRIBUTI od svakog entiteta
+
+student (id, broj_indexa, godina_studija, ime, prezime)
+katedra (id, sifra, naziv)
+predmet (id, sifra, naziv, broj_casova, katedra_id)
+student_predmet (id, student_id, predmet_id, datum_polaganja, ocena)
+profesor (id, sifra, ime, prezime, zvanje, plata, katedra_id)
+profesor_predmet(id, profesor_id, predmet_id)
 
 ![1](https://user-images.githubusercontent.com/56784702/208450361-8723eeb6-e7ac-48bd-80ea-43ee18ab23f9.png)
-![2](https://user-images.githubusercontent.com/56784702/208481379-cf5af19a-4cba-47e4-98e5-51db94998dec.png)
 
 
